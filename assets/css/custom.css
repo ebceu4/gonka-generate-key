@@ -4,10 +4,12 @@
   --fg: #e6edf3;
   --accent: #58a6ff;
   --border: #30363d;
-  --code-bg: #161b22;
-  --code-border: #30363d;
-  --code-fg: #d2d8e4;
-  --inline-code-bg: #1f242b;
+  --terminal-bg: #0a0f14;
+  --terminal-border: #1f242b;
+  --terminal-text: #d1d7e0;
+  --terminal-green: #9ae16f;
+  --terminal-blue: #58a6ff;
+  --terminal-gray: #7a828e;
 }
 
 body {
@@ -20,7 +22,7 @@ body {
   padding: 0 1.5rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3 {
   color: #fff;
   font-weight: 600;
   margin-top: 2rem;
@@ -30,63 +32,72 @@ a {
   color: var(--accent);
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-}
+a:hover { text-decoration: underline; }
 
+/* inline code */
 code {
-  background: var(--inline-code-bg);
+  background: #1e242a;
   color: var(--accent);
   padding: 2px 6px;
   border-radius: 4px;
   font-size: 0.95em;
 }
 
+/* terminal-like block */
 pre {
-  background: var(--code-bg);
-  color: var(--code-fg);
-  border: 1px solid var(--code-border);
-  border-radius: 8px;
-  padding: 1rem;
+  background: var(--terminal-bg);
+  color: var(--terminal-text);
+  border: 1px solid var(--terminal-border);
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
   overflow-x: auto;
+  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
   font-size: 0.9em;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  position: relative;
 }
 
+/* fake terminal top bar */
+pre::before {
+  content: "● ● ●";
+  color: #555;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+}
+
+/* prompt highlighting */
+pre code {
+  color: var(--terminal-text);
+}
+pre code .prompt {
+  color: var(--terminal-green);
+}
+pre code .cmd {
+  color: var(--terminal-blue);
+}
+pre code .comment {
+  color: var(--terminal-gray);
+  font-style: italic;
+}
+
+/* markdown tables and misc */
 table {
   border-collapse: collapse;
   width: 100%;
   margin: 1.5rem 0;
 }
-table, th, td {
-  border: 1px solid var(--border);
-}
-th, td {
-  padding: 0.6rem 0.8rem;
-}
-th {
-  background: #161b22;
-  text-align: left;
-}
+table, th, td { border: 1px solid var(--border); }
+th, td { padding: 0.6rem 0.8rem; }
+th { background: #161b22; }
 
 img {
   max-width: 700px;
   width: 100%;
-  height: auto;
   border-radius: 8px;
   display: block;
   margin: 1.5rem auto;
   border: 1px solid var(--border);
-}
-
-blockquote {
-  border-left: 4px solid var(--accent);
-  padding-left: 1rem;
-  color: #9ba7b3;
-  margin: 1rem 0;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid var(--border);
-  margin: 2rem 0;
 }
