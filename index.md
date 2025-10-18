@@ -38,9 +38,13 @@
 <pre><code><span class="cmd">./inferenced</span> <span class="arg">keys</span> <span class="arg">add</span> <span class="arg">gonka-account-key-cluster1</span> <span class="arg">--keyring-backend</span> <span class="arg">file</span> <span class="arg">--home</span> <span class="path">./gonka-keys-cluster1</span></code></pre>
 
 macOS покажет ещё одно окно — нажми **Open Anyway (Открыть всё равно)**.  
-После этого бинарник будет считаться доверенным и запускаться без ограничений.
 
 <img src="images/step4-open-anyway.png" alt="Open Anyway" style="max-width:300px; width:100%; border-radius:8px;">
+
+После запуска в терминале увидишь:
+<pre><code><span class="comment">Re-enter keyring passphrase:</span></code></pre>
+
+Введи пароль 2 раза (это будет пароль от ключа).
 
 После выполнения команда создаст папку `gonka-keys-cluster1` с ключами.
 
