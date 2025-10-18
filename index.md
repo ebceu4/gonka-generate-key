@@ -11,10 +11,10 @@
 ## 2. Разрешить запуск
 
 Открой **Terminal** и перейди в папку, где лежит файл:
-<pre><code><span class="prompt">$</span> <span class="cmd">cd</span> <span class="path">~/Downloads</span></code></pre>
+<pre><code><span class="cmd">cd</span> <span class="path">~/Downloads</span></code></pre>
 
 Запусти файл:
-<pre><code><span class="prompt">$</span> <span class="cmd">./inferenced</span></code></pre>
+<pre><code><span class="cmd">./inferenced</span></code></pre>
 
 После первой попытки запуска появится предупреждение, что приложение *«inferenced» не может быть открыто*.  
 Это нормально — нажми **Done**.
@@ -35,7 +35,7 @@
 ## 3. Сгенерировать ключ
 
 Теперь можно создать ключ:
-<pre><code><span class="prompt">$</span> <span class="cmd">./inferenced</span> <span class="arg">keys</span> <span class="arg">add</span> <span class="arg">gonka-account-key-cluster1</span> <span class="arg">--keyring-backend</span> <span class="arg">file</span> <span class="arg">--home</span> <span class="path">./gonka-keys-cluster1</span></code></pre>
+<pre><code><span class="cmd">./inferenced</span> <span class="arg">keys</span> <span class="arg">add</span> <span class="arg">gonka-account-key-cluster1</span> <span class="arg">--keyring-backend</span> <span class="arg">file</span> <span class="arg">--home</span> <span class="path">./gonka-keys-cluster1</span></code></pre>
 
 macOS покажет ещё одно окно — нажми **Open Anyway (Открыть всё равно)**.  
 После этого бинарник будет считаться доверенным и запускаться без ограничений.
@@ -50,7 +50,7 @@ macOS покажет ещё одно окно — нажми **Open Anyway (От
 
 После выполнения команды генерации ключа ты увидишь в терминале примерно такой вывод:
 
-<pre><code><span class="prompt">$</span> <span class="cmd">./inferenced</span> <span class="arg">keys</span> <span class="arg">add</span> <span class="arg">gonka-account-key-cluster1</span> <span class="arg">--keyring-backend</span> <span class="arg">file</span> <span class="arg">--home</span> <span class="path">./gonka-keys-cluster1</span>
+<pre><code><span class="cmd">./inferenced</span> <span class="arg">keys</span> <span class="arg">add</span> <span class="arg">gonka-account-key-cluster1</span> <span class="arg">--keyring-backend</span> <span class="arg">file</span> <span class="arg">--home</span> <span class="path">./gonka-keys-cluster1</span>
 Enter keyring passphrase (attempt 1/3):
 Re-enter keyring passphrase:
 
