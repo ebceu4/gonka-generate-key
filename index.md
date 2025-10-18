@@ -5,7 +5,10 @@
 ```
 https://github.com/gonka-ai/gonka/releases/download/release%2Fv0.2.3/inferenced-darwin-arm64.zip
 ```
-Распакуй его — появится файл `inferenced`.
+
+[Ссылка на архив](https://github.com/gonka-ai/gonka/releases/download/release%2Fv0.2.3/inferenced-darwin-arm64.zip)
+
+Распакуй его (2 раза нажать) — появится файл `inferenced`.
 
 ---
 
