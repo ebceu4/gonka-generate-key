@@ -42,9 +42,9 @@ macOS покажет ещё одно окно — нажми **Open Anyway (От
 <img src="images/step4-open-anyway.png" alt="Open Anyway" style="max-width:300px; width:100%; border-radius:8px;">
 
 После запуска в терминале увидишь:
-<pre><code><span class="comment">Re-enter keyring passphrase:</span></code></pre>
+<pre><code><span class="comment">Enter keyring passphrase (attempt 1/3):</span></code></pre>
 
-Введи пароль 2 раза (это будет пароль от ключа).
+Введи пароль 2 раза (это будет пароль от ключа), минимум 8 символов.
 
 После выполнения команда создаст папку `gonka-keys-cluster1` с ключами.
 
