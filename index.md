@@ -22,7 +22,7 @@ cd ~/Downloads
 После первой попытки запуска появится предупреждение, что приложение *«inferenced» не может быть открыто*.  
 Это нормально — нажми **Done**.
 
-<img src="images/step2-warning.png" alt="Ошибка при первом запуске" style="max-width:600px; width:100%; border-radius:8px;">
+<img src="images/step2-warning.png" alt="Ошибка при первом запуске" style="max-width:300px; width:100%; border-radius:8px;">
 
 Открой:
 > **Системные настройки → Конфиденциальность и безопасность**
@@ -45,7 +45,7 @@ cd ~/Downloads
 macOS покажет ещё одно окно — нажми **Open Anyway (Открыть всё равно)**.  
 После этого бинарник будет считаться доверенным и запускаться без ограничений.
 
-![Open Anyway](images/step4-open-anyway.png)
+<img src="images/step4-open-anyway.png" alt="Open Anyway" style="max-width:300px; width:100%; border-radius:8px;">
 
 После выполнения команда создаст папку `gonka-keys-cluster1` с ключами.
 
