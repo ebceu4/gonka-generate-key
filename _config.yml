@@ -1,0 +1,4 @@
+title: Gonka Docs
+description: Инструкция по генерации ключей для Gonka
+theme: minima   # можно заменить на jekyll-theme-cayman или другой
+markdown: kramdown
