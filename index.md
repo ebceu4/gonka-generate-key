@@ -14,7 +14,9 @@ https://github.com/gonka-ai/gonka/releases/download/release%2Fv0.2.3/inferenced-
 Открой **Terminal** и перейди в папку, где лежит файл:
 ```bash
 cd ~/Downloads
-chmod +x inferenced
+```
+Запусти файл:
+```bash
 ./inferenced
 ```
 
