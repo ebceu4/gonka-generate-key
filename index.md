@@ -9,7 +9,7 @@ https://github.com/gonka-ai/gonka/releases/download/release%2Fv0.2.3/inferenced-
 
 ---
 
-## 2. Подготовить и разблокировать
+## 2. Разрешить запуск
 
 Открой **Terminal** и перейди в папку, где лежит файл:
 ```bash
@@ -25,12 +25,9 @@ cd ~/Downloads
 
 ![Ошибка при первом запуске](images/step2-warning.png)
 
----
-
-## 3. Разрешить запуск
-
 Открой:
 > **Системные настройки → Конфиденциальность и безопасность**
+(System Settings → Privacy & Security)
 
 Прокрути вниз до блока с надписью:  
 > “inferenced” был заблокирован для защиты вашего Mac.
@@ -39,24 +36,17 @@ cd ~/Downloads
 
 ![Allow Anyway](images/step3-allow.png)
 
-Теперь снова запусти в терминале:
+## 3. Сгенерировать ключ
+
+Теперь можно создать ключ:
 ```bash
-./inferenced
+./inferenced keys add gonka-account-key-cluster1 --keyring-backend file --home ./gonka-keys-cluster1
 ```
 
 macOS покажет ещё одно окно — нажми **Open Anyway (Открыть всё равно)**.  
 После этого бинарник будет считаться доверенным и запускаться без ограничений.
 
 ![Open Anyway](images/step4-open-anyway.png)
-
----
-
-## 4. Сгенерировать ключ
-
-Теперь можно создать ключ:
-```bash
-./inferenced keys add gonka-account-key-cluster1 --keyring-backend file --home ./gonka-keys-cluster1
-```
 
 После выполнения команда создаст папку `gonka-keys-cluster1` с ключами.
 
